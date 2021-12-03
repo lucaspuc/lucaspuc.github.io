@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Portfolio pessoal</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="wrapper-navbar">
+        <div class="container-links">
+          <ul class="lista-links">
+            <li><a href="#perfil" class="link">Perfil</a></li>
+            <li><a href="#projetos" class="link">Projetos</a></li>
+            <li><a href="#experiencia" class="link">Experiência</a></li>
+            <li><a href="#repositorios" class="link">Repositórios github</a></li>
+            <li><a href="#conteudo" class="link">Conteúdo</a></li>
+          </ul>
+          <i class="fas fa-bars fa-2x icone-mobile"></i>
+        </div>
+        <div class="container-pesquisa">
+          <input type="text" class="input-pesquisa" placeholder="Pesquisar..." />
+        </div>
+      </div>
+    </nav>
+    <main id="main">
+      <div class="container-redes" id="perfil">
+        <div class="container-imagem">
+          <img src="./img/pessoa.jpg" alt="Imagem pessoal" class="imagem-pessoa" />
+        </div>
+        <div class="container-midias">
+          <h2 class="titulo-midias">Redes sociais</h2>
+          <div class="wrapper-icones">
+            <i class="fab fa-facebook fa-2x icone-facebook"></i>
+            <i class="fab fa-twitter fa-2x icone-twitter"></i>
+            <i class="fab fa-instagram fa-2x icone-instagram"></i>
+          </div>
+        </div>
+      </div>
+      <div class="container-projetos" id="projetos">
+        <div class="wrapper-projetos">
+          <h2 class="titulo-projetos">Projetos</h2>
+          <div class="projetos">
+            <div class="projeto">
+              <p class="descricao-projeto">Projeto Calculadora - 2020</p>
+              <img src="./img/projeto1.jpg" alt="Projeto Um" class="imagem-projeto" />
+            </div>
+            <div class="projeto">
+              <p class="descricao-projeto">Projeto Pomodoro - 2021</p>
+              <img src="./img/projeto2.jpg" alt="Projeto Dois" class="imagem-projeto" />
+            </div>
+            <div class="projeto">
+              <p class="descricao-projeto">Projeto Xadrez - 2021</p>
+              <img src="./img/projeto3.png" alt="Projeto Tres" class="imagem-projeto" />
+            </div>
+          </div>
+          <div class="botao-projetos botao-principal">
+            <a href="#" class="btn-add-projetos"><i class="fas fa-plus icone-add"></i>Carregar mais projetos</a>
+          </div>
+        </div>
+      </div>
+      <div class="container-experiencia" id="experiencia">
+        <h2 class="titulo-experiencia">Experiência</h2>
+        <div class="wrapper-experiencia">
+          <div class="experiencia">
+            <img src="./img/empresa1.png" alt="Lojas Renner" class="img-empresa" />
+            <div class="descricao-experiencia">
+              <h2 class="cargo">Desenvolvedor fullstack</h2>
+              <p class="descricao-cargo">
+                Trabalho atualmente como desenvolvedor fullstack nas lojas renner utilizando a stack MEVN desde meados de 2021.
+              </p>
+              <p class="periodo-cargo">Período: 06/2021 - Presente</p>
+            </div>
+          </div>
+          <div class="experiencia">
+            <img src="./img/empresa2.png" alt="Localiza" class="img-empresa" />
+            <div class="descricao-experiencia">
+              <h2 class="cargo">Desenvolvedor backend</h2>
+              <p class="descricao-cargo">Trabalhei na Localiza por 9 meses como desenvolvedor backend utilizando NodeJS.</p>
+              <p class="periodo-cargo">Período: 09/2020 - 06/2021</p>
+            </div>
+          </div>
+          <div class="experiencia">
+            <img src="./img/empresa3.png" alt="Ambev" class="img-empresa" />
+            <div class="descricao-experiencia">
+              <h2 class="cargo">Desenvolvedor frontend</h2>
+              <p class="descricao-cargo">Trabalhei na Ambev por 18 meses atuando como desenvolvedor frontend utilizando a tecnologia VueJS.</p>
+              <p class="periodo-cargo">Período: 02/2019 - 08/2020</p>
+            </div>
+          </div>
+        </div>
+        <div class="botao-experiencia botao-principal">
+          <a href="#" class="btn-add-experiencia"><i class="fas fa-plus icone-add"></i>Carregar mais experiências</a>
+        </div>
+      </div>
+      <div class="container-repositorios" id="repositorios">
+        <h2 class="titulo-repositorios">Repositórios Github</h2>
+        <div class="wrapper-repositorios">
+          <div class="repositorio">
+            <h2>
+              <a class="titulo-repositorio" href="https://github.com/roldanjr/pomatez" target="_blank"
+                ><i class="fab fa-github icone-github"></i>Repositório Pomodoro<i class="far fa-clock icone-final"></i
+              ></a>
+            </h2>
+            <p class="descricao-repositorio">
+              <strong>Descrição:</strong> Os objetivos do relógio Pomodoro estão ligados à diminuição da ansiedade e ao aumento do foco e concentração
+              nas tarefas, evitando tempo desperdiçado e distrações.
+            </p>
+          </div>
+          <div class="repositorio">
+            <h2>
+              <a class="titulo-repositorio" href="https://github.com/microsoft/calculator" target="_blank"
+                ><i class="fab fa-github icone-github"></i>Repositório Calculadora<i class="fas fa-calculator icone-final"></i
+              ></a>
+            </h2>
+            <p class="descricao-repositorio">
+              <strong>Descrição:</strong> Calculadora simples e leve que executa diversas operações, contribuindo assim na conveniência no dia a dia.
+            </p>
+          </div>
+          <div class="repositorio">
+            <h2>
+              <a class="titulo-repositorio" href="https://github.com/ornicar/lila" target="_blank"
+                ><i class="fab fa-github icone-github"></i>Repositório Xadrez<i class="fas fa-chess icone-final"></i>
+              </a>
+            </h2>
+            <p class="descricao-repositorio">
+              <strong>Descrição:</strong> Jogo de xadrez simples e compacto focado com jogabilidade em tempo real e facilidade de jogo.
+            </p>
+          </div>
+        </div>
+        <div class="botao-experiencia botao-principal">
+          <a href="./projetos.html" class="btn-add-projetos"><i class="fas fa-plus icone-add"></i>Saiba mais</a>
+        </div>
+      </div>
+      <div class="container-conteudo">
+        <h2 class="titulo-conteudo">Recomendação de conteúdo</h2>
+        <div class="wrapper-conteudo">
+          <div class="container-videos">
+            <div class="conteudo">
+              <div class="wrapper-iframe">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/nhBVL41-_Cw"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="conteudo-video">
+                <p class="descricao-video"><strong>Vídeo:</strong> Breve vídeo explicando sobre o framework VueJS</p>
+                <p class="criador-video">
+                  <strong>Feito por:</strong> <a class="canal-youtube" href="https://www.youtube.com/c/Fireship" target="_blank">Fireship</a>
+                </p>
+              </div>
+            </div>
+            <div class="conteudo" id="conteudo">
+              <div class="wrapper-iframe">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/U4ogK0MIzqk"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="conteudo-video">
+                <p class="descricao-video">
+                  <strong>Vídeo:</strong> Vídeo mostrando como foi feito uma inteligência artificial para um jogo de xadrez.
+                </p>
+                <p class="criador-video">
+                  <strong>Feito por:</strong>
+                  <a class="canal-youtube" href="https://www.youtube.com/channel/UCmtyQOKKmrMVaKuRXz02jbQ" target="_blank">Sebastian Lague</a>
+                </p>
+              </div>
+            </div>
+            <div class="conteudo">
+              <div class="wrapper-iframe">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/ENrzD9HAZK4"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="conteudo-video">
+                <p class="descricao-video">
+                  <strong>Vídeo:</strong> Vídeo bastante explicativo sobre NodeJS, usado para rodar código Javascript fora do browser.
+                </p>
+                <p class="criador-video">
+                  <strong>Feito por:</strong> <a class="canal-youtube" href="https://www.youtube.com/c/Fireship" target="_blank">Fireship</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-copyright">
+        <p class="texto-copyright">&copy; Copyright 2021 - Portfolio pessoal, Lucas Gomes. Todos os direitos reservados.</p>
+        <div class="container-logo">
+          <img src="./img/logoPortfolio.png" alt="Logo Portfolio" class="img-logo" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
