@@ -5,6 +5,7 @@ const elementos = {
   username: document.querySelector(".username"),
   bio: document.querySelector(".bio-perfil"),
   quantidadeRepositorios: document.querySelector(".quantidade-repos"),
+  quantidadeSeguidores: document.querySelector(".seguidores"),
 };
 
 elementos.iconePesquisa.addEventListener("click", preencherDadosGithub);
@@ -98,6 +99,7 @@ async function preencherDadosGithub() {
     } else {
       elementos.bio.innerHTML = `<strong>Bio:</strong> ${dadosPerfil.bio}`;
     }
+    elementos.quantidadeSeguidores.innerHTML = `<strong>Seguidores: </strong>${dadosPerfil.followers}`;
     if (dadosPerfil.public_repos === 0) {
       elementos.quantidadeRepositorios.innerHTML = `<strong>Quantidade repositorios</strong>: 0`;
     } else {
